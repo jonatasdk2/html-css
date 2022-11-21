@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+
+            background-color: gray;
+            padding-top: 3px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.685);
+
+        }
+        nav > a{
+            margin-right: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        h1{
+            text-align: center;
+            box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.712) ;
+        }
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 0px 20px;
+            box-shadow: inset -4px -4px 1px rgb(0 0 0 / 56%);
+        }
+        article{
+            background-color: lightslategray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: aliceblue;
+            display: inline-block;
+            height: 20px;
+            padding-top: 3px;
+            
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 5px ;
+            margin: 0px;
+            text-align: center;
+        }
+        span{
+            margin-left: 10px;
+            color: red;
+        }
+        .inline{
+            
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MEU SITE</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <article> 
+        <section id="assuntos"></section>
+        <h2>noticias sobre politica</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia minima animi non eos quam, maxime deleniti excepturi repellat ad. Aspernatur vitae sint quaerat tempore! Adipisci maiores nostrum et error iusto! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptate omnis sapiente blanditiis tempore provident alias vitae pariatur qui! Architecto ipsa minima vitae blanditiis, unde at impedit. Officia, nulla animi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima perspiciatis unde maiores quis, laudantium molestias doloremque, nostrum repudiandae quaerat ea eaque itaque amet accusantium alias sint eum? Laborum, adipisci veritatis.
+        Cumque hic, quisquam temporibus laudantium delectus corporis saepe. Sapiente eos accusamus quisquam eligendi aliquid maiores laborum deleniti voluptates quia nesciunt, commodi iste, velit exercitationem fuga eveniet vitae, odio asperiores. Vitae.
+        Quod qui laborum ducimus quasi, placeat sit minus eligendi iusto enim dolores corrupti illum a necessitatibus esse minima. Ipsam, ipsum voluptatem? Non fugit est, ea cum error consequuntur eaque animi.</p>
+        <aside >
+            <p class="inline">artigo escrito por:<span>jonatas passos de freitas barbosa</span></p>
+        </aside>
+    </article>
+        <article>
+        <section id="noticias"></section>
+    </article>        
+    </main>
+    <footer>
+        <p>desenvolvido por jonatas</p>
+
+    </footer>
+
+    
+</body>
+</html>
