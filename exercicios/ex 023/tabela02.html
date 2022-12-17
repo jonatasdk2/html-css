@@ -12,6 +12,12 @@
         table{
             border-collapse: collapse;
             width: 500px;
+            position: relative;
+        }
+        thead >tr >th{
+            position: sticky;
+            background-color: black;
+            top: -1px;
         }
         td,th{
             border: 1px solid brown;
@@ -24,15 +30,34 @@
             background-color: gray;
             color: white;
         }
+        caption{
+            padding: 10px;
+            font-size:1.5em;
+            font-weight: bold;
+            background-color: aquamarine;
+        }
+        tbody>tr:nth-child(2n){
+            background-color: lightgrey;
+
+        }
     </style>
 </head>
+<!--
+    semantica tabelas
+
+    caption=legendas
+    thead= cabeçalho
+    tbody=corpo
+    tfoot=pé
+-->
 <body>
     <h1>uso de tabelas grandes</h1>
     <table>
+        <caption>população das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -149,7 +174,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td><strong>190.755.799</strong></td>
             </tr>
 
