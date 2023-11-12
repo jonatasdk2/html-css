@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'love';
+            src: url(La\ Barceloneta.otf) format('opentype');
+            font-style: normal;
+            font-weight: normal;
+        }
+            /*
+            tipos de formato()
+            -opentype(otf)
+            -truetype(ttf)
+            -embedded-opentype
+            -truetype-att(apple advanced typography)
+            -svg
+            */
+        
+        body{
+            font-family: 'love', Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: 'love', 'Times New Roman', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto tempora laborum doloribus excepturi similique aut minus accusamus culpa beatae quam commodi mollitia dignissimos id, nam ipsam molestiae veritatis vero expedita.</p>
+    
+</body>
+</html>
